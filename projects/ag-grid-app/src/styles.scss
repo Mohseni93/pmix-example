@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '../../../node_modules/@angular/material/datepicker/datepicker-theme';
+@import '../../../node_modules/@angular/material/theming';
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+.mat-calendar-body-cell.selected {
+  background-color: red !important;
+  border-radius: 50%;
+}
+.drop-calendar {
+  width: 30rem;
+}
+
+
+
+
+
+app-header-calender {
+  .mat-select {
+    color: white;
+    padding: 0 10px;
+    margin-bottom: -20px;
+    box-sizing: border-box;
+  }
+
+  .mat-select-value,
+  .mat-select-arrow {
+    color: #fff;
+  }
+}
+
+.mat-datepicker-content {
+  height: 400px;
+}
+app-date-picker-persian {
+  .mat-form-field{
+    direction: rtl;
+    text-align: right;
+  }
+}
+.mat-calendar-controls{
+  margin: 2% calc(4.7142857143% - 16px) !important;
+}

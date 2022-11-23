@@ -1,0 +1,5 @@
+<mat-form-field #FormpickerS>
+    <input matInput [matDatepicker]="pickerS" placeholder="Choose a date" [(ngModel)]="dateConvert">
+    <mat-datepicker-toggle matSuffix [for]="pickerS"></mat-datepicker-toggle>
+    <mat-datepicker #pickerS [calendarHeaderComponent]="calendarHeaderComponent"></mat-datepicker>
+</mat-form-field>

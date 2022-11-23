@@ -1,0 +1,24 @@
+:root {
+    .mat-select {
+      background: #00796b;
+      color: white;
+      padding: 20px;
+      margin-bottom: -20px;
+      box-sizing: border-box;
+    }
+  
+    .mat-select-value,
+    .mat-select-arrow {
+      color: #fff;
+    }
+  }
+  
+  .mat-datepicker-content {
+    height: 400px;
+  }
+.row-header-calender{
+  align-items: center;
+  justify-content: center;
+  background-color: #673ab7;
+  padding: 10px;
+}

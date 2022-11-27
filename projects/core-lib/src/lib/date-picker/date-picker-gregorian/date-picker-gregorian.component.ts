@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatCalendar } from '@angular/material/datepicker';
-import { Moment } from 'moment';
-import { HeaderCalenderComponent } from '../app.component';
+import { HeaderCalenderComponent } from '../date-picker.component';
 import { convertCalender } from '../mat-core/active-calender-token';
 
 @Component({

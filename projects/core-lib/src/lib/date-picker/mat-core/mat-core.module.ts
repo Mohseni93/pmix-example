@@ -1,5 +1,4 @@
-import { JALALI_MOMENT_FORMATS } from './jalali_moment_formats';
-import { JalaliMomentDateAdapter } from './jalali-moment-date-adapter';
+
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import {
   MatAutocompleteModule,
@@ -10,7 +9,7 @@ import{ MatCardModule } from '@angular/material/card';
 import{ MatCheckboxModule } from '@angular/material/checkbox';
 import{ MatChipsModule } from '@angular/material/chips';
 import{ MatTableModule } from '@angular/material/table';
-import{ MatDatepickerModule, MatDateSelectionModel } from '@angular/material/datepicker';
+import{ MatDatepickerModule } from '@angular/material/datepicker';
 import{ MatDialogModule } from '@angular/material/dialog';
 import{ MatExpansionModule } from '@angular/material/expansion';
 import{ MatFormFieldModule } from '@angular/material/form-field';
@@ -35,14 +34,8 @@ import{ MatToolbarModule } from '@angular/material/toolbar';
 import{ MatTooltipModule } from '@angular/material/tooltip';
 import { CdkTableModule } from '@angular/cdk/table';
 import { DateAdapter, MatNativeDateModule, MAT_DATE_FORMATS, MAT_DATE_LOCALE } from '@angular/material/core';
-import { CustomDatePickerAdapter, CUSTOM_DATE_FORMATS } from './date-adapter-custom';
 import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
-import { registerLocaleData } from '@angular/common';
-import localeEn from '@angular/common/locales/en';
-import localeFa from '@angular/common/locales/fa';
-import localeDeExtra from '@angular/common/locales/extra/de';
-import { HttpBackend, HttpClient } from '@angular/common/http';
-import { MultiTranslateHttpLoader } from 'ngx-translate-multi-http-loader';
+
 // import { ACTIVE_CALENDAR } from './active-calender-token';
 // registerLocaleData(localeEn, 'en');
 // registerLocaleData(localeFa, 'fa', localeDeExtra);

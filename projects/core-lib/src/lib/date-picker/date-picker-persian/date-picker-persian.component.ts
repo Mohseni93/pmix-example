@@ -10,7 +10,7 @@ import * as moment from 'moment';
 import { convertCalender, convertCalenderService } from '../mat-core/active-calender-token';
 import { Output } from '@angular/core';
 import { EventEmitter } from '@angular/core';
-import { HeaderCalenderComponent } from '../app.component';
+import { HeaderCalenderComponent } from '../date-picker.component';
 
 
 @Component({

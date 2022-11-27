@@ -1,1 +1,20 @@
-<p>date-picker works!</p>
+<!-- <lib-show-data></lib-show-data>
+
+{{title}} -->
+<mat-card-title>switch by Gregorian to persian </mat-card-title>
+<mat-radio-group aria-label="Select an option">
+    <mat-radio-button 
+    #radioButton
+    [value]="language" 
+    *ngFor="let language of languageList" 
+    [checked]="language === activeCalender"
+    (change)="checkBoxSelected(language)">{{language}} Calender</mat-radio-button>
+    <!-- <mat-radio-button value="Persian">Persian Calender</mat-radio-button> -->
+  </mat-radio-group>
+  <mat-card fxFlex="100">
+    <app-date-picker-persian #persianPicker
+     *ngIf="activeCalender === 'Persian'"
+     (setDate)="setDateEn($event)"
+     ></app-date-picker-persian>
+    <app-date-picker-gregorian #gregorianPicker *ngIf="activeCalender === 'Gregorian'"></app-date-picker-gregorian>
+  </mat-card>
